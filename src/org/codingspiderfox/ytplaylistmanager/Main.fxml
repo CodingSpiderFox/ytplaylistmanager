@@ -40,7 +40,13 @@
                            <children>
                               <AnchorPane prefHeight="50.0" prefWidth="250.0">
                                  <children>
-                                    <Label prefHeight="25.0" prefWidth="250.0" text="Label" />
+                                    <HBox prefHeight="25.0" prefWidth="250.0">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="250.0" text="Source Lists" />
+                                          <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="0" />
+                                          <Button mnemonicParsing="false" text="Button" />
+                                       </children>
+                                    </HBox>
                                  </children>
                               </AnchorPane>
                               <ListView prefHeight="500.0" prefWidth="250.0" />
@@ -48,8 +54,52 @@
                         </VBox>
                         <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
                            <children>
-                              <Pane prefHeight="50.0" prefWidth="250.0" />
+                              <AnchorPane prefHeight="50.0" prefWidth="250.0">
+                                 <children>
+                                    <HBox prefHeight="25.0" prefWidth="250.0">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="250.0" text="Destination Lists" />
+                                          <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="0" />
+                                          <Button mnemonicParsing="false" text="Button" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
                               <ListView prefHeight="500.0" prefWidth="250.0" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="260.0" layoutY="10.0" prefHeight="200.0" prefWidth="300.0">
+                           <children>
+                              <AnchorPane prefHeight="25.0" prefWidth="300.0">
+                                 <children>
+                                    <HBox prefHeight="25.0" prefWidth="300.0">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="300.0" text="Bulk Actions" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="300.0">
+                                 <children>
+                                    <HBox prefHeight="25.0" prefWidth="300.0">
+                                       <children>
+                                          <Label prefHeight="25.0" prefWidth="250.0" text="Make source lists private" />
+                                          <CheckBox mnemonicParsing="false" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                              <Region VBox.vgrow="ALWAYS" />
+                              <AnchorPane layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="300.0">
+                                 <children>
+                                    <HBox prefHeight="25.0" prefWidth="300.0">
+                                       <children>
+                                          <Region HBox.hgrow="ALWAYS" />
+                                          <Button mnemonicParsing="false" text="Run actions" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
                            </children>
                         </VBox>
                      </children>
