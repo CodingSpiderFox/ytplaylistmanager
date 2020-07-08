@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.codingspiderfox.ytplaylistmanager.MainController">
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.codingspiderfox.ytplaylistmanager.ui.main.MainController">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -34,27 +34,38 @@
                       </Menu>
                     </menus>
                   </MenuBar>
-                  <HBox prefHeight="500.0" prefWidth="800.0">
+                  <HBox prefHeight="550.0" prefWidth="800.0">
                      <children>
                         <VBox prefHeight="200.0" prefWidth="250.0">
                            <children>
                               <AnchorPane prefHeight="50.0" prefWidth="250.0">
                                  <children>
+                                    <Label prefHeight="25.0" prefWidth="250.0" style="-fx-font-weight: bold;" text="Source" />
+                                 </children></AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="250.0">
+                                 <children>
                                     <HBox prefHeight="25.0" prefWidth="250.0">
                                        <children>
-                                          <Label prefHeight="25.0" prefWidth="250.0" text="Source Lists" />
+                                          <Label prefHeight="25.0" prefWidth="250.0" text="Lists" />
                                           <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="0" />
+                                          <Label layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Items" />
+                                          <Label layoutX="121.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="0" />
                                           <Button mnemonicParsing="false" text="Button" />
                                        </children>
                                     </HBox>
                                  </children>
                               </AnchorPane>
-                              <ListView prefHeight="500.0" prefWidth="250.0" />
+                              <ListView prefHeight="550.0" prefWidth="250.0" />
                            </children>
                         </VBox>
                         <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
                            <children>
                               <AnchorPane prefHeight="50.0" prefWidth="250.0">
+                                 <children>
+                                    <Label prefHeight="25.0" style="-fx-font-weight: bold;" text="Destination" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="250.0">
                                  <children>
                                     <HBox prefHeight="25.0" prefWidth="250.0">
                                        <children>
@@ -65,7 +76,7 @@
                                     </HBox>
                                  </children>
                               </AnchorPane>
-                              <ListView prefHeight="500.0" prefWidth="250.0" />
+                              <ListView prefHeight="550.0" prefWidth="250.0" />
                            </children>
                         </VBox>
                         <VBox layoutX="260.0" layoutY="10.0" prefHeight="200.0" prefWidth="300.0">
@@ -74,7 +85,7 @@
                                  <children>
                                     <HBox prefHeight="25.0" prefWidth="300.0">
                                        <children>
-                                          <Label prefHeight="25.0" prefWidth="300.0" text="Bulk Actions" />
+                                          <Label prefHeight="25.0" prefWidth="300.0" style="-fx-font-weight: bold;" text="Bulk Actions" />
                                        </children>
                                     </HBox>
                                  </children>
